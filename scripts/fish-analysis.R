@@ -19,3 +19,9 @@ fish_data_cat <- filter(fish_data_cat, scalelength > 1)
 library(tidyverse)
 ggplot(fish_data)+
   geom_point(mapping = aes(x=length, y=scalelength, color= lakeid))
+
+
+
+#histogram code
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
