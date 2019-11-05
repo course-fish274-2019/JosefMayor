@@ -13,3 +13,9 @@ fish_data_cat = fish_data %>%
 #3 second solo commit
 
 fish_data_cat <- filter(fish_data_cat, scalelength > 1)
+
+#5 pushing changes
+
+library(tidyverse)
+ggplot(fish_data)+
+  geom_point(mapping = aes(x=length, y=scalelength, color= lakeid))
