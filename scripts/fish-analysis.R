@@ -9,3 +9,7 @@ library(dplyr)
 #for catfish length with "big" length (>300) and "small" length (<300)
 fish_data_cat = fish_data %>%
   mutate(length_cat = ifelse(length > 300, "big", "small"))
+
+#3 second solo commit
+
+fish_data_cat <- filter(fish_data_cat, scalelength > 1)
