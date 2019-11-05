@@ -1,6 +1,6 @@
 #commit R script
 
-fish_data = read.csv("data/Gaeta_etal_CLC_data.csv")
+fish_data = read.csv("data/Gaeta_etal_CLC_data_1.csv")
 
 #building a history
 
