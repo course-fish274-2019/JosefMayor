@@ -24,4 +24,7 @@ ggplot(fish_data)+
 
 #histogram code
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+  geom_histogram(binwidth = 80)+
+  ggsave("figures/scale_hist_by_length.jpg")
+
+  
